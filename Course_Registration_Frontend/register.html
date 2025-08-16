@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Register a Course</title>
+          <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+                background-color: #c7bebe;
+                margin-top: 70px;
+                margin-bottom: 70px;
+            }
+            h2 {
+                color: blueviolet;
+            }
+            label {
+                font-weight: bold;
+            }
+            input, select {
+                padding: 10px;
+                margin: 10px 0;
+                width: 200px;
+            }
+            button {
+                background-color: rgb(0, 71, 171);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+            button:hover {
+                background-color: rgb(85, 14, 115);
+            }
+         </style>
+    </head> 
+       <body>
+        <h2 style="color: blueviolet;">Every big achievement starts with a small registration — take the first step today!</h2>
+
+        <form action="http://localhost:8080/courses/register" method="post">
+
+            <label for="name">Enter Your Name</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label for="email">Enter your emailId</label><br>
+            <input type="email" name="emailId"><br><br>
+
+            <label for="course">Select Course</label><br>
+            <select id="course" name="courseName">
+                 <option value="Java Fundamentals">Java Fundamentals</option>
+                 <option value="Web Development with React">Web Development with React</option>
+                 <option value="Database Management (MySQL)">Database Management (MySQL)</option>
+                 <option value="Python for Data Science">Python for Data Science</option>
+                 <option value="Cloud Computing Basics">Cloud Computing Basics</option>
+                 <option value="Machine Learning Intro">Machine Learning Intro</option>
+                 <option value="Spring Boot with Microservices">Spring Boot with Microservices</option>
+                 <option value="Front-End Development">Front-End Development (HTML, CSS, JS)</option>
+                 <option value="Cybersecurity Fundamentals">Cybersecurity Fundamentals</option>
+                 <option value="Mobile App Development">Mobile App Development (Flutter)</option>
+            </select>
+
+            <br><br>
+            
+            <button type="submit">submit</button>
+
+         </form>
+    </body>
+</html>
